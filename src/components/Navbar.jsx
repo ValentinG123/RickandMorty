@@ -8,6 +8,7 @@ const Navbar = ({
   handleGender,
   handleSpecies,
   handleStatus,
+  getHome,
   searchName,
   name,
 }) => {
@@ -138,7 +139,8 @@ const Navbar = ({
           <HiBars3BottomLeft className="w-8 text-[24px] text-white" />
         </button>
       </div>
-      <div className="w-[40%] flex justify-center z-50">
+      <div className="w-[40%] flex justify-center z-50" onClick={getHome}>
+         
         <img
           src={logo}
           className="md:w-44 md:h-16 sm:w-32 w-20 sm:h-10 xl:h-24"

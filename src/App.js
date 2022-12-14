@@ -64,6 +64,7 @@ function App() {
         }}
         searchName={(e) => {setName(e.target.value);setPagination(1);setPage(1)}}
         name={name}
+        getHome={() => {setName('');setPagination(1);setPage(1);setGender('');setSpecie('');setStatus('')}}
       />
 
       {personajes.info === undefined ? (
